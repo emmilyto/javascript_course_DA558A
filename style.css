@@ -1,0 +1,66 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #864c1d;
+    background-color: #ffe6b3;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+legend {
+    color: #f18289;
+    font-weight: bolder;
+}
+
+
+fieldset {
+    color: #98b623;
+    border-color: #9a5720;
+    padding: 15px;
+    margin: 20px;
+
+}
+
+button {
+    margin: 20px;
+    color:#864c1d;
+    background-color: #f3e8d5;
+    padding: 10px;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #864c1d;
+
+}
+
+.quiz {
+    margin: 0 auto;
+    padding: 3em;
+    max-width: 640px;
+
+}
+
+.intro {
+    text-align: center;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.flour-option {
+    border-radius: 5px;
+    color: #98b623;
+    padding: 2px;
+    font-size: medium;
+
+}

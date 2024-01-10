@@ -1,0 +1,131 @@
+<!-- Emmily To LAB2 DA558A -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Quiz container -->
+    <div class="quiz"> 
+        <!-- Quiz Intro -->
+       <h1> Quiz by Emmily To </h1>
+       <p class="intro"> Welcome to Emmily's mochi quiz! </p>
+       <img src="mochis.jpeg">
+       <p class="intro"> * fields are mandatory </p>
+
+        <!-- Quiz form-->
+        <form id="mochiquiz">
+            <!-- Fieldset is to seperate every section -->
+            <fieldset class="personal">
+                <legend> Personal Information</legend>
+                <p> Please fill in your personal information details to start the quiz. </p>
+
+                <label for="firstname"> * First Name </label>
+                <!-- Required pattern is to show that input text should only be letters -->
+                <input type="text" id="firstname" required pattern="[A-Za-z]+" title="Only letters are allowed"> 
+                <br>
+                <br>
+                <label for="lastname"> * Last Name </label>
+                <!-- Required pattern is to show that input text should only be letters -->
+                <input type="text" id="lastname" required pattern="[A-Za-z]+" title="Only letters are allowed"> 
+                <br>
+                <br>
+                <label for="email"> * Email </label>
+                <!-- Required pattern is to show that input should include @ -->
+                <input type="email" id="email" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Incorrect email format">             
+            </fieldset>
+
+            <fieldset>
+                <legend> Question 1 </legend>  
+                <!-- Required question 1 therefore, it's name is question1 -->
+                <p class="question"> * Which country is mochi from? </p>
+                <input type="radio" name="question1" value="answer1_1" required> 
+                <label for="answer1"> South Korea </label>  
+                <br>
+                <input type="radio" name="question1" value="answer1_2" required> 
+                <label for="answer2"> Japan </label>  
+                <br>
+                <input type="radio" name="question1" value="answer1_3" required> 
+                <label for="answer3"> China </label>     
+            </fieldset>
+
+            <fieldset>
+                <legend> Question 2 </legend>
+                <!-- Required question 2 therefore, it's id is q2select -->
+                <p class="question"> * Which flour is mochi made out of?  </p>
+                <select class="flour-option" id="q2select" required> 
+                    <!-- Default answer selected -->
+                    <option value="" disabled selected> Select your answer </option>
+                    <br>
+                    <option value="answer2_1"> Wheat Flour</option>  
+                    <br>
+                    <option value="answer2_2"> Corn Flour </option>  
+                    <br>
+                    <option value="answer2_3"> Glutinous Rice Flour </option>     
+                </select>      
+            </fieldset>
+
+            <!-- Question 3 with checkboxx option-->
+            <fieldset>
+                <legend> Question 3 </legend>  
+                <p class="question"> Which ones are popular mochi flavours from their origin country? (multiple choices) </p>
+                <input type="checkbox"> 
+                <label for="answer3_1"> Red Bean Mochi </label>  
+                <br>
+                <input type="checkbox"> 
+                <label for="answer3_2"> Mango Mochi </label>  
+                <br>
+                <input type="checkbox"> 
+                <label for="answer3_3"> Chocolate Mochi </label>
+                <br>  
+                <input type="checkbox"> 
+                <label for="answer3_4"> Green Tea Mochi</label>
+                <br>  
+                <input type="checkbox"> 
+                <label for="answer3_4"> Sakura Mochi</label>  
+            </fieldset>
+
+            <!-- Question 4 with checkbox option -->
+            <fieldset>
+                <legend> Question 4 </legend>  
+                <p class="question"> What is mochi? (multiple choices) </p>
+                <input type="checkbox"> 
+                <label for="answer4_1"> A rice cake</label>  
+                <br>
+                <input type="checkbox"> 
+                <label for="answer4_2"> A fruit</label>  
+                <br>
+                <input type="checkbox"> 
+                <label for="answer4_3"> A dessert</label>
+                <br>  
+                <input type="checkbox"> 
+                <label for="answer4_4"> A salty snack </label>  
+            </fieldset>
+
+            <!-- Question 5 with textarea answer -->
+            <fieldset>
+                <legend> Question 5 </legend>  
+                <p class="question"> What is mochi ice cream and does it exist? </p>
+                <!-- Textarea to answer question 5-->
+                <textarea class="answer5" cols="50" rows="4" required>
+                </textarea>
+
+                        
+            </fieldset>
+
+            <!-- Submit button for submittning answers -->
+            <!-- Also the trigger for the validation-->
+            <button type="submit">  Submit Answers </button>
+
+        </form>
+    </div>
+
+    <!-- Link the javascript code to the html -->
+    <script src="emmilyto.js"></script>
+
+</body>
+</html>
